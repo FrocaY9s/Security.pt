@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Atualizações - Bot Discord</title>
+    <style>
+        :root {
+            --bg-primary: #313338;
+            --bg-secondary: #2b2d31;
+            --bg-tertiary: #1e1f22;
+            --accent: #5865f2;
+            --accent-hover: #4752c4;
+            --text-primary: #f2f3f5;
+            --text-muted: #949ba4;
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'gg sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-tertiary);
+            color: var(--text-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            background-color: var(--bg-primary);
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--bg-secondary);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .changelog-card {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .changelog-card .version {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .changelog-card .date {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .changelog-card ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .changelog-card ul li {
+            margin-bottom: 6px;
+        }
+
+        .qr-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--bg-secondary);
+            text-align: center;
+        }
+
+        .qr-section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .qr-box {
+            display: inline-block;
+            background: #ffffff;
+            padding: 12px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .qr-box img {
+            width: 180px;
+            height: 180px;
+            display: block;
+        }
+
+        .qr-label {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📢 Central de Atualizações</h1>
+            <p>Acompanha todas as novidades e melhorias do bot em tempo real.</p>
+        </header>
+
+        <!-- Bloco de Atualização Exemplo 1 -->
+        <div class="changelog-card">
+            <div class="version">🚀 Atualização v1.beta</div>
+            <div class="date">Publicado em: Outubro de 2026</div>
+            <ul>
+                <li>Correção e otimização do sistema de verificação por QR Code.</li>
+                <li>Melhorias na estabilidade geral e velocidade de resposta do bot.</li>
+            </ul>
+        </div>
+
+        <footer>
+            &copy; 2026 Todos os direitos reservados.
+        </footer>
+    </div>
+
+</body>
+</html>
